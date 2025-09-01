@@ -1,0 +1,145 @@
+/* Main Container */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8fafc;
+}
+
+/* Card */
+.signin-card {
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 95%;
+}
+
+/* --- Improved Left Form --- */
+.signin-left {
+  padding: 3.5rem; /* Increased padding for more breathing room */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem; /* KEY CHANGE: Consistent spacing between all form elements */
+}
+
+.signin-left p {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin: 0;
+  margin-top: -0.5rem; /* closer to heading */
+}
+
+/* --- Typography & Alignment --- */
+.signin-left h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center; /* KEY CHANGE: Symmetrical alignment */
+  margin: 0;
+}
+
+.signin-left .subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center; /* KEY CHANGE: Symmetrical alignment */
+  margin: 0;
+  margin-top: -0.5rem; /* Pull subtitle closer to the heading */
+}
+
+/* --- Input Fields (Your styles are good, retained) --- */
+.signin-left input[type="email"],
+.signin-left input[type="password"],
+.signin-left input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff; /* This line makes the background white */
+  color: #1a1a1a; /* This ensures the text is dark and readable */
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.signin-left input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+/* --- Links & Checkbox --- */
+.signin-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.signin-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signin-links a:hover {
+  text-decoration: underline;
+}
+
+.signin-links label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* --- Button (Your styles are good, retained) --- */
+.signin-left button {
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px; /* Slightly more padding for a better feel */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signin-left button:hover {
+  background: #1d4ed8;
+}
+
+/* --- Bottom "Create Account" Text --- */
+.signup-account-text {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center; /* KEY CHANGE: Symmetrical alignment */
+}
+
+.signup-account-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-account-text a:hover {
+  text-decoration: underline;
+}
+
+/* Right Illustration */
+.signin-illustration {
+  flex: 1;
+}
+
+.signin-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

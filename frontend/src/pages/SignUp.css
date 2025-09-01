@@ -1,0 +1,130 @@
+/* Main Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8fafc; /* match signin background */
+}
+
+/* Card */
+.signup-card {
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 95%; /* same max width as signin */
+}
+
+/* --- Left Form --- */
+.signup-left {
+  padding: 3.5rem; /* consistent padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem; /* consistent spacing */
+}
+
+/* --- Typography --- */
+.signup-left h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+}
+
+.signup-left p {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin: 0;
+  margin-top: -0.5rem; /* closer to heading */
+}
+
+/* --- Input Fields --- */
+.signup-left input[type="text"],
+.signup-left input[type="email"],
+.signup-left input[type="password"],
+.signup-left input[type="date"],
+.signup-left input[type="number"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #6b7280;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.signup-left input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+}
+
+/* --- Button --- */
+.signup-left button {
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.signup-left button:hover {
+  background: #1d4ed8;
+}
+
+/* --- Bottom "Switch to Signin" Text --- */
+.switch-to-signin {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.switch-to-signin a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch-to-signin a:hover {
+  text-decoration: underline;
+}
+
+/* --- Bottom "SignIn Account" Text --- */
+.signin-account-text {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center; /* KEY CHANGE: Symmetrical alignment */
+}
+
+.signin-account-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signin-account-text a:hover {
+  text-decoration: underline;
+}
+
+/* --- Right Illustration --- */
+.signup-illustration {
+  flex: 1;
+}
+
+.signup-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

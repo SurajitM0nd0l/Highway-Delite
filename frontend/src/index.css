@@ -1,0 +1,24 @@
+/* --- Core Layout & Font Styles --- */
+
+/* Defines the default font and smooths its rendering */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  /* --- Font Smoothing Properties --- */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Establishes the single-page layout:
+  - margin: 0;           <- The fix for the unwanted scrollbar.
+  - min-height: 100vh;   <- Ensures the body fills the screen.
+  - display & place-items: These center your content, you can keep or remove them.
+*/
+body {
+  margin: 0; /* Always a good practice to reset default margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Move the background color here */
+}
