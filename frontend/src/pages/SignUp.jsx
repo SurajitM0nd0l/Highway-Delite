@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import InputField from "../components/InputField";
 import Button from "../components/Button";
-import "./Signup.css";
+import "./SignUp.css";
 import LoginImg from "../assets/pawel-czerwinski-eimEio8958o-unsplash.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
