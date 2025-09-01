@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchNotes = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/notes/${user.email}`);
+                const res = await axios.get(`https://highway-delite-backend-irk1.onrender.com/notes/${user.email}`);
                 setNotes(res.data);
             } catch (err) {
                 console.error(err);
@@ -26,7 +26,7 @@ const Dashboard = () => {
     const handleCreateNote = async () => {
         if (!newNoteText.trim()) return;
         try {
-            const res = await axios.post('http://localhost:3000/notes', { email: user.email, text: newNoteText });
+            const res = await axios.post('https://highway-delite-backend-irk1.onrender.com/notes', { email: user.email, text: newNoteText });
             setNotes([...notes, res.data.note]);
             setNewNoteText('');
         } catch (err) {

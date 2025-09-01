@@ -27,7 +27,7 @@ const Signup = () => {
     if (!form.email) return alert("Please enter your email first");
 
     try {
-      const res = await axios.post("http://localhost:3000/get-otp", { email: form.email });
+      const res = await axios.post("https://highway-delite-backend-irk1.onrender.com/get-otp", { email: form.email });
       alert("OTP sent to your email ✅");
       setStep(2);
     } catch (err) {
@@ -43,7 +43,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/signup", form);
+      const res = await axios.post("https://highway-delite-backend-irk1.onrender.com/signup", form);
       alert(res.data.message);
 
       // Navigate to signin page after successful signup
