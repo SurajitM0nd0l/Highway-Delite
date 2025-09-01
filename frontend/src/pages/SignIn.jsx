@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import "./SignIn.css";
 import LoginImg from "../assets/pawel-czerwinski-eimEio8958o-unsplash.jpg";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Signin = () => {
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ const Signin = () => {
           <Button text="Sign in" onClick={handleSignin} />
 
           <p className="signup-account-text">
-            Need an account? <a href="/signup">Create one</a>
+            Need an account? <Link to="/signup">Create one</Link>
           </p>
         </div>
 

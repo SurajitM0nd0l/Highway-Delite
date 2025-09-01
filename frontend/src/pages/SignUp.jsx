@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import "./SignUp.css";
 import LoginImg from "../assets/pawel-czerwinski-eimEio8958o-unsplash.jpg";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -60,25 +60,26 @@ const Signup = () => {
         {/* Left Form */}
         <div className="signup-left">
           <h2>Sign up</h2>
-          <p>Please login to continue to your account.</p>
+          <p>Please signup to continue to your account.</p>
 
-          <InputField type='text' value={form.name} onChange={handleChange("name")} placeholder="Name"/>
+          <InputField type='text' value={form.name} onChange={handleChange("name")} placeholder="Name" />
           <InputField type="date" value={form.dob} onChange={handleChange('dob')} />
-          <InputField type="email" value={form.email} onChange={handleChange("email")} placeholder="Email"/>
-          <InputField type="password" value={form.password} onChange={handleChange("password")} placeholder="Password"/>
+          <InputField type="email" value={form.email} onChange={handleChange("email")} placeholder="Email" />
+          <InputField type="password" value={form.password} onChange={handleChange("password")} placeholder="Password" />
 
           {step === 1 ? (
             <Button text="Get OTP" onClick={handleGetOtp} />
           ) : (
             <>
-              <InputField value={form.otp} onChange={handleChange("otp")} className="otp-input" placeholder="OTP"/>
+              <InputField value={form.otp} onChange={handleChange("otp")} className="otp-input" placeholder="OTP" />
               <Button text="Sign up" onClick={handleSignup} />
             </>
           )}
 
           <p className="signin-account-text">
-            Already have an account? <a href="/signin">Sign in</a>
+            Already have an account? <Link to="/signin">Sign in</Link>
           </p>
+
         </div>
 
         {/* Right Illustration */}
